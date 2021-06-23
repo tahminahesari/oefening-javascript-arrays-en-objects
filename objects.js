@@ -5,7 +5,7 @@ const name = {
   firstName: "Tahmina",
   lastName: "Hesari",
   age: 101,
-  dateOfBirth: "1 april",
+  dateOfBirth: new Date(1987,4,1)
 }
 console.log(name);
 
@@ -44,7 +44,7 @@ console.log(product["b-h-d"]);
 // Declareer een variabele met daarin een string die het product beschrijft. Gebruik hiervoor de properties productName en material uit het object.
 // ---- Verwachte uitkomst:
 // "De Smeg Waterkoker is gemaakt van roestvrijstaal en kunststof"
-const productName = `${product.productName} is gemaakt van ${product.material[0]} en ${product.material[1]}`
-console.log(productName);
+const productDescription = `${product.productName} is gemaakt van ${product.material[0]} en ${product.material[1]}`
+console.log(productDescription);
 
 
